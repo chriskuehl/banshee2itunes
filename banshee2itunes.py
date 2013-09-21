@@ -43,5 +43,5 @@ for row in c:
 		# instead just hash the path
 		hash_val = hashlib.sha1(path.encode("utf-8")).hexdigest()
 
-		ext = os.path.splitext(path)[1]
+		ext = os.path.splitext(path)[1].lower()
 		os.symlink(path, target_dir + "/music/" + hash_val + ext)
