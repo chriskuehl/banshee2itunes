@@ -13,6 +13,6 @@ def make_m3u(path):
 	
 	return m3u
 
-# Generate an M3U playlist with all of the files
+# generate an M3U playlist with all of the files
 m3u = make_m3u(os.path.expanduser("~/Desktop/music"))
 print(m3u)
